@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+<title>Web App</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<style>
+body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
+</style>
+<body class="w3-light-grey">
+
+<!-- w3-content defines a container for fixed size centered content, 
+and is wrapped around the whole page content, except for the footer in this example -->
+<div class="w3-content" style="max-width:1400px">
+
+<!-- Header -->
+<header class="w3-container w3-center w3-padding-32"> 
+  <h1><b>Django Fortune Teller</b></h1>
+  <p>Welcome to Eddie's amazing project!<span class="w3-tag"></span></p>
+</header>
+
+<!-- Grid -->
+<div class="w3-row">
+
+<!-- Blog entries -->
+<div class="w3-col l8 s12">
+  <!-- Blog entry -->
+  <div class="w3-card-4 w3-margin w3-white">
+    <img src="">
+    <div class="w3-container">
+      <h3><b>Here is your fortune for today:</b></h3>
+      <h5>{{ fortune }}<span class="w3-opacity">    December 22, 2021</span></h5>
+    </div>
+
+    <div class="w3-container">
+
+      <div class="w3-row">
+        <div class="w3-col m8 s12">
+          <p><button class="w3-button w3-padding-large w3-white w3-border"><b>READ MORE »</b></button></p>
+        </div>
+        <div class="w3-col m4 w3-hide-small">
+          <p><span class="w3-padding-large w3-right"><b>Comments  </b> <span class="w3-tag">0</span></span></p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <hr>
+
+  <!-- Blog entry -->
+  <div class="w3-card-4 w3-margin w3-white">
+  <img src="https://images.unsplash.com/photo-1543373014-cfe4f4bc1cdf?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8aGlnaCUyMHJlc29sdXRpb258ZW58MHx8MHx8&w=1000&q=80" alt="Inspiration" style="width:100%">
+    <div class="w3-container">
+      <h3><b>Eddie's Favorite Quote:</b></h3>
+      <h5>The greatest glory in living lies not in never falling, but in rising every time we fall.<span class="w3-opacity"> -Nelson Mandela</span></h5>
+    </div>
+
+    <div class="w3-container">
+      <p>This project was created with a template from w3schools. The broken images are a result of my lack of knowledge on how to make them work. Thank you w3schools for making this possible. Otherwise, this would just be an ugly white screen with the fortune in small text in the middle and no one really likes that. I have very little knowledge on front-end web development as of Dec. 22, 2021. I will soon. This is cool.
+        Dec.26 update: You just gotta open the image in the new tab! See the photo?
+      </p>
+      <div class="w3-row">
+        <div class="w3-col m8 s12">
+          <p><button class="w3-button w3-padding-large w3-white w3-border"><b>READ MORE »</b></button></p>
+        </div>
+        <div class="w3-col m4 w3-hide-small">
+          <p><span class="w3-padding-large w3-right"><b>Comments  </b> <span class="w3-badge">2</span></span></p>
+        </div>
+      </div>
+    </div>
+  </div>
+<!-- END BLOG ENTRIES -->
+</div>
+
+<!-- Introduction menu -->
+<div class="w3-col l4">
+  <!-- About Card -->
+  <div class="w3-card w3-margin w3-margin-top">
+  <img src="/w3images/avatar_g.jpg" style="width:100%">
+    <div class="w3-container w3-white">
+      <h4><b>About Eddie Ward</b></h4>
+      <p>Edward Musashi Ward is a coding hobbyist from Tenafly, New Jersey. He loves coding because he loves to learn. He also loves the feeling of succeeding at a project after the inevitable struggle that comes with the complexity of programming. Eddie believes that while computer programming is not for everyone, it can still be quite entertaining if you put the time in to learn.</p>
+    </div>
+  </div><hr>
+  
+  <!-- Posts -->
+  <div class="w3-card w3-margin">
+    <div class="w3-container w3-padding">
+      <h4>Popular Posts</h4>
+    </div>
+    <ul class="w3-ul w3-hoverable w3-white">
+      <li class="w3-padding-16">
+        <img src="/w3images/workshop.jpg" alt="Image" class="w3-left w3-margin-right" style="width:50px">
+        <span class="w3-large">Sports</span><br>
+        <span>Why Eddie Got Cut</span>
+      </li>
+      <li class="w3-padding-16">
+        <img src="/w3images/gondol.jpg">
+        <span class="w3-large">High School</span><br>
+        <span>How Eddie Struggled To Make Friends</span>
+      </li> 
+      <li class="w3-padding-16">
+        <img src="/Users/eddie/Desktop/johnxinaheader.jpg" alt="Image" class="w3-left w3-margin-right" style="width:50px">
+        <span class="w3-large">Family</span><br>
+        <span>Why Eddie Loves His Family</span>
+      </li>   
+      <li class="w3-padding-16 w3-hide-medium w3-hide-small">
+        <img src="/Users/eddie/Desktop/johnxinaheader.jpg" alt="Image" class="w3-left w3-margin-right" style="width:50px">
+        <span class="w3-large">Coding</span><br>
+        <span>How To Be Gritty</span>
+      </li>  
+    </ul>
+  </div>
+  <hr> 
+ 
+  <!-- Labels / tags -->
+  <div class="w3-card w3-margin">
+    <div class="w3-container w3-padding">
+      <h4>Tags</h4>
+    </div>
+    <div class="w3-container w3-white">
+    <p><span class="w3-tag w3-black w3-margin-bottom">Inspirational</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Tenafly</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">New York</span>
+      <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Blog</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">New Jersey</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">DIY</span>
+      <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Ideas</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Computer Programming</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Family</span>
+      <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Baskebtall</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Coding</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Shopping</span>
+      <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Sports</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Games</span>
+    </p>
+    </div>
+  </div>
+  
+<!-- END Introduction Menu -->
+</div>
+
+<!-- END GRID -->
+</div><br>
+
+<!-- END w3-content -->
+</div>
+
+<!-- Footer -->
+<footer class="w3-container w3-dark-grey w3-padding-32 w3-margin-top">
+  <button class="w3-button w3-black w3-disabled w3-padding-large w3-margin-bottom">Previous</button>
+  <button class="w3-button w3-black w3-padding-large w3-margin-bottom">Next »</button>
+  <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">W3Schools.com</a></p>
+</footer>
+
+</body>
+</html>
